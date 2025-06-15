@@ -1,0 +1,17 @@
+spring:
+  r2dbc:
+    url: your-postgres-url
+    username: your-postgres-username
+    password: your-password
+    properties:
+      schema: your-schema-name
+
+server:
+  port: 8085
+
+logging:
+  level:
+    io.r2dbc.postgresql.QUERY: DEBUG
+    io.r2dbc.postgresql.PARAM: DEBUG
+    org.springframework.r2dbc.core: DEBUG
+    org.springframework.data.r2dbc.core: DEBUG
